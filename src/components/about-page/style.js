@@ -131,7 +131,7 @@ margin-right:10%;
 
 export const GuaranteeSectionWrapper = styled.div`
 width:100%;
-height:300px;
+height:320px;
 @media only screen and (max-width:768px) {
 	height:600px;
 }
