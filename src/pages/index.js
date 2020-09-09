@@ -8,8 +8,8 @@ import CustomerSection from '../components/main-page/Section/CustomerSection/ind
 
 const IndexPage = () => {
 	
-	const [height,setHeight] = useState(window.innerHeight)
-	const [width, setWidth] = useState(window.innerWidth)
+	const [height,setHeight] = useState(null)
+	const [width, setWidth] = useState(null)
 	const [responsiveHeight, setResponsiveHeight] = useState(height)
 
 
