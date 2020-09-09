@@ -9,7 +9,7 @@ const PageLayout = ({ children}) => {
 
 	const { Content, Footer, Sider } = Layout
 
-	const [width, setWindowWidth] = useState(420)
+	const [width, setWindowWidth] = useState(421)
 
 	const [showPage, setShowPage] = useState(true)
 
