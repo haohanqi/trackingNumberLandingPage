@@ -44,7 +44,7 @@ const PageLayout = ({ children }) => {
 					collapsedWidth="0"
 					style={  styles.pageSider }
 					onCollapse={(collapsed) => { changeSiderNav(collapsed)}}
-					width={windowWidth <= 420 ? `${windowWidth-50}px`: '200px'}
+					width={windowWidth <= 420 ? `${windowWidth-200}px`: '200px'}
 			>
 
 					<SideNav/>
