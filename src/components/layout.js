@@ -1,51 +1,99 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React,{useState, useEffect} from 'react'
+import PropTypes from 'prop-types'
+import {Layout} from 'antd'
+import SideNav from './main-page/Nav/SideNav'
+import { basicColor} from '../basicStyle'
+import FooterSection from './main-page/Footer/FooterSection'
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+const PageLayout = ({ children }) => {
 
-import Header from "./header"
-import "./layout.css"
+	const { Content, Footer, Sider } = Layout
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
+	const [showPage, setShowPage] = useState(true)
+
+	// get current window width 
+	useEffect(()=>{
+		function handleResize(){
+			setWindowWidth(window.innerWidth)
+		}
+		window.addEventListener('resize', handleResize)
+		return () => window.removeEventListener('resize', handleResize)
+	},[])
+	 
+
+	function changeSiderNav (collapsed){
+		if (windowWidth <= 420 && collapsed) {
+			setShowPage(true)
+			
+			return
+		}
+		if (windowWidth <= 420 && !collapsed) {
+			setShowPage(false)
+			return
+		}
+		setShowPage(true)
+	}
+
+	return (
+		
+		<Layout style={{ background: basicColor.primaryColor}}>	
+			
+			<Sider  breakpoint="xl" 
+					collapsedWidth="0"
+					style={  styles.pageSider }
+					onCollapse={(collapsed) => { changeSiderNav(collapsed)}}
+					width={windowWidth <= 420 ? `${windowWidth-50}px`: '200px'}
+			>
+
+					<SideNav/>
+
+			</Sider>
+			
+			<Layout 
+				style={windowWidth <= 420 ? 
+					{
+						background: basicColor.primaryColor,
+						minHeight: '100vh',
+						display: showPage ? 'block' : 'none'
+					} : styles.page
+				}
+			>
+
+				<Content>	
+					{children}
+				</Content>
+
+				<Footer style={{background:basicColor.sideColor}}>
+					<FooterSection />
+				</Footer>
+
+			</Layout>
+
+		</Layout>
+
+	)
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+PageLayout.propTypes = {
+	children: PropTypes.node.isRequired,
 }
 
-export default Layout
+const styles = {
+	page: {
+		background: basicColor.primaryColor,
+		minHeight: "100vh",
+		dispaly:"block",
+	},
+
+	pageSider:{
+		position: "sticky",
+		height:"100vh",
+		zIndex:1,
+		top: 0,
+		left: 0
+	},
+
+}
+export default PageLayout
