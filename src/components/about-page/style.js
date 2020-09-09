@@ -47,6 +47,7 @@ font-size:15px;
 
 export const StepSectionWrapper = styled.div`
 display:inline-block;
+box-sizing: border-box;
 float:right;
 width: 25%;
 height: 100%;
@@ -55,7 +56,7 @@ padding-left:2.5%;
 padding-right:2.5%;
 background-color: #FF947F;
 border-top-left-radius: 100px; 
-overflow:auto;
+overflow:hidden;
 @media only screen and (max-width: 576px) {
 	display:none;
 }
@@ -91,11 +92,13 @@ margin-bottom:30px;
 export const CompanyDes = styled.div`
 width:80%;
 ${des};
+height:350px;
 font-size:25px;
 margin-bottom:100px;
 color:${basicColor.desTextColorTwo};
 @media only screen and (max-width: 480px) {
 	width:100%;
+	height:none;
 	font-size:20px;
 }
 
@@ -123,7 +126,7 @@ ${sectionTitle};
 font-size:25px;
 line-height:60px;
 text-align:center;
-margin-top:50%;
+margin-top:100px;
 border-radius:20px;
 margin-left:10%;
 margin-right:10%;
@@ -141,6 +144,7 @@ width:100%;
 height:100%;
 padding-left:5%;
 padding-top:5%;
+box-sizing: border-box;
 background-color:${props=>props.backgroundColor};
 color:${props => props.color};
 @media only screen and (max-width:768px) {
@@ -158,7 +162,7 @@ justify-content:start;
 align-items:center;
 width:100%;
 ${title};
-margin-bottom:10%;
+margin-bottom:30px;
 `
 
 

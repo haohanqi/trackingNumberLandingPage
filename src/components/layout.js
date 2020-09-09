@@ -4,12 +4,13 @@ import {Layout} from 'antd'
 import SideNav from './main-page/Nav/SideNav'
 import { basicColor} from '../basicStyle'
 import FooterSection from './main-page/Footer/FooterSection'
+import windowSize from 'react-window-size';
 
-const PageLayout = ({ children }) => {
+const PageLayout = ({ children, windowWidth, windowHeight}) => {
 
 	const { Content, Footer, Sider } = Layout
 
-	const [windowWidth, setWindowWidth] = useState(420)
+	const [width, setWindowWidth] = useState(windowWidth)
 
 	const [showPage, setShowPage] = useState(true)
 
@@ -24,12 +25,12 @@ const PageLayout = ({ children }) => {
 	 
 
 	function changeSiderNav (collapsed){
-		if (windowWidth <= 420 && collapsed) {
+		if (width <= 420 && collapsed) {
 			setShowPage(true)
 			
 			return
 		}
-		if (windowWidth <= 420 && !collapsed) {
+		if (width <= 420 && !collapsed) {
 			setShowPage(false)
 			return
 		}
@@ -44,7 +45,7 @@ const PageLayout = ({ children }) => {
 					collapsedWidth="0"
 					style={  styles.pageSider }
 					onCollapse={(collapsed) => { changeSiderNav(collapsed)}}
-					width={windowWidth <= 420 ? `${windowWidth-200}px`: '200px'}
+					width={width <= 420 ? `${width-50}px`: '200px'}
 			>
 
 					<SideNav/>
@@ -52,7 +53,7 @@ const PageLayout = ({ children }) => {
 			</Sider>
 			
 			<Layout 
-				style={windowWidth <= 420 ? 
+				style={width <= 420 ? 
 					{
 						background: basicColor.primaryColor,
 						minHeight: '100vh',
@@ -96,4 +97,4 @@ const styles = {
 	},
 
 }
-export default PageLayout
+export default windowSize(PageLayout)
