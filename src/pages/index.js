@@ -5,13 +5,12 @@ import IntroSection from '../components/main-page/Section/IntroSection/index'
 import ServiceSection from '../components/main-page/Section/ServiceSection/index'
 import ServiceIntroSection from '../components/main-page/Section/ServiceIntroSection/index'
 import CustomerSection from '../components/main-page/Section/CustomerSection/index'
-import windowSize from 'react-window-size';
 
 
 const IndexPage = ({ windowWidth, windowHeight}) => {
 	
-	const [height, setHeight] = useState(windowHeight)
-	const [width, setWidth] = useState(windowWidth)
+	const [height, setHeight] = useState(undefined)
+	const [width, setWidth] = useState(420)
 	const [responsiveHeight, setResponsiveHeight] = useState(height)
 
 
@@ -77,4 +76,4 @@ const IndexPage = ({ windowWidth, windowHeight}) => {
 	
 
 
-export default windowSize(IndexPage)
+export default IndexPage
