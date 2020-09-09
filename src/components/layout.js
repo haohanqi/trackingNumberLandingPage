@@ -9,7 +9,7 @@ const PageLayout = ({ children }) => {
 
 	const { Content, Footer, Sider } = Layout
 
-	const [windowWidth, setWindowWidth] = useState(null)
+	const [windowWidth, setWindowWidth] = useState(421)
 
 	const [showPage, setShowPage] = useState(true)
 
@@ -24,6 +24,7 @@ const PageLayout = ({ children }) => {
 	 
 
 	function changeSiderNav (collapsed){
+		console.log(windowWidth)
 		if (windowWidth <= 420 && collapsed) {
 			setShowPage(true)
 			
