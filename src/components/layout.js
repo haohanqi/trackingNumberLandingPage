@@ -9,7 +9,7 @@ const PageLayout = ({ children }) => {
 
 	const { Content, Footer, Sider } = Layout
 
-	const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+	const [windowWidth, setWindowWidth] = useState(null)
 
 	const [showPage, setShowPage] = useState(true)
 
