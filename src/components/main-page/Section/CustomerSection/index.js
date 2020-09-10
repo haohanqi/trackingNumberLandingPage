@@ -11,8 +11,8 @@ const CostumerSection = ()=>{
 					<CustomerSectionTitle>What Does Our Customers Say ?</CustomerSectionTitle>
 				</Col>
 			</Row>
-			<Row justify="center">
-				<Col align="center">
+			<Row justify="center" style={{width:"100%"}}>
+				<Col align="center" span={24}>
 					<Carousel style={{width:"80%",height:"490px",marginBottom:"20px"}}>
 						<CustomerItem/>
 						<CustomerItem/>

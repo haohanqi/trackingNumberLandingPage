@@ -27,6 +27,7 @@ const IndexPage = () => {
 		}
 		window.addEventListener('resize', handleResize)
 		return () => window.removeEventListener('resize', handleResize)
+		
 	}, [height, width]) 
 
 	// set a responsive high, if screen height larger than 1400px, set section component height to full screen height. 
@@ -40,6 +41,9 @@ const IndexPage = () => {
 			setResponsiveHeight(height)	
 		}
 	}, [height,width])
+
+	console.log("width"+width)
+	console.log("height" + height)
 
 	
 	

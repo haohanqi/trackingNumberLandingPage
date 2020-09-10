@@ -9,29 +9,36 @@ const PageLayout = ({ children}) => {
 
 	const { Content, Footer, Sider } = Layout
 
-	const [width, setWindowWidth] = useState(421)
+	const [width, setWindowWidth] = useState(1200)
 
 	const [showPage, setShowPage] = useState(true)
-
+	
 	// get current window width 
-	useEffect(()=>{
-		function handleResize(){
+	// useEffect(()=>{
+	// 	if(typeof window !== 'undefined'){
+	// 		setWindowWidth(window.innerWidth)
+	// 	}
+	// },[width])
+
+	useEffect(() => {
+		function handleResize() {
 			setWindowWidth(window.innerWidth)
 		}
 		window.addEventListener('resize', handleResize)
 		return () => window.removeEventListener('resize', handleResize)
-	},[])
-	 
+	}, [])
 
-	function changeSiderNav (collapsed){
-		if (width <= 420 && collapsed) {
+	function changeSiderNav (collapsed){	
+		if (width<=420 && collapsed) {
 			setShowPage(true)
 			return
 		}
-		if (width <= 420 && !collapsed) {
+		
+		if (width <= 420 && !collapsed){
 			setShowPage(false)
 			return
 		}
+
 		setShowPage(true)
 	}
 
@@ -51,7 +58,7 @@ const PageLayout = ({ children}) => {
 			</Sider>
 			
 			<Layout 
-				style={width <= 420 ? 
+				style={width <= 420 ?
 					{
 						background: basicColor.primaryColor,
 						minHeight: '100vh',
@@ -83,12 +90,11 @@ const styles = {
 	page: {
 		background: basicColor.primaryColor,
 		minHeight: "100vh",
-		dispaly:"block",
 	},
 
 	pageSider:{
 		position: "sticky",
-		height:"100vh",
+		minHeight:"100vh",
 		zIndex:1,
 		top: 0,
 		left: 0
