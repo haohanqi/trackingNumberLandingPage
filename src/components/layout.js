@@ -26,7 +26,6 @@ const PageLayout = ({ children}) => {
 	function changeSiderNav (collapsed){
 		if (width <= 420 && collapsed) {
 			setShowPage(true)
-			
 			return
 		}
 		if (width <= 420 && !collapsed) {

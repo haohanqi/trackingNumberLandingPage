@@ -51,8 +51,7 @@ text-align:center;
 `
 
 export const TrackingButton = styled.div`
-position:absolute;
-top:400px;
+margin-top:30px;
 width: 60%;
 height: 60px;
 background-color:${basicColor.buttonTextColorTwo};
@@ -223,3 +222,18 @@ text-align:left;
 `
 
 
+export const TabContentWrapper = styled.ul`
+padding-left:10%;
+padding-right:10%;
+padding-top: 20px;
+padding-bottom:20px;
+`
+export const Content = styled.div`
+font-size: 15px;
+font-weight: bold;
+margin-bottom: 15px;
+`
+export const ContentList = styled.li`
+margin-left: 20px;
+margin-bottom: 15px;
+`

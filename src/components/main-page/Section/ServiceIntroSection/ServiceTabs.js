@@ -5,9 +5,9 @@ import { SerciceTabTitle } from '../../style'
 const ServiceTabs = ({des,details,price,height})=>{
 	console.log(height)
 	return (
-		<Tabs size="default" style={{marginLeft:"2.5%",marginRight:"2.5%"}}>
+		<Tabs size="default" style={{marginLeft:"5%",marginRight:"5%"}}>
 			<Tabs.TabPane tab={<SerciceTabTitle >Description</SerciceTabTitle> } key="1">
-				<div style={{width:"100%",height:"600px",background:"white",borderRadius:"10px"}}>
+				<div style={{width:"100%",background:"white",borderRadius:"10px"}}>
 					{des}
 				</div>
 			</Tabs.TabPane>
@@ -18,7 +18,7 @@ const ServiceTabs = ({des,details,price,height})=>{
 				</div>
 			</Tabs.TabPane>
 
-			<Tabs.TabPane tab={<SerciceTabTitle >price</SerciceTabTitle>} key="3">
+			<Tabs.TabPane tab={<SerciceTabTitle >Price</SerciceTabTitle>} key="3">
 				<div style={{ width: "100%", height: "600px", background: "white", borderRadius: "10px" }}>
 					{price}
 				</div>

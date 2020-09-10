@@ -1,6 +1,6 @@
 import React from 'react'
 import {Row,Col} from 'antd'
-import {BasicSectionWrapper,basicColor} from '../../../../basicStyle'
+import {basicColor} from '../../../../basicStyle'
 import { ServiceIntroSectionWrapper,Subtitle} from '../../style'
 import ServiceTabs from './ServiceTabs'
 
@@ -12,7 +12,7 @@ const ServiceIntroSection = ({src,reverse,height,title,imngSrc,des,details,price
 					<Row>
 						<Col  xl={12} lg={12} md={24}  xs={24}>
 							<Subtitle><span/>{title}<span/></Subtitle>
-							<ServiceTabs des={des} height={`${height}px`}/>
+							<ServiceTabs des={des} details={details} price={price} height={`${height}px`}/>
 						</Col>
 						<Col xl={12} lg={12} md={0} xs={0}>
 							<img src={src} height={`${height}px`} width="100%" />
@@ -29,7 +29,7 @@ const ServiceIntroSection = ({src,reverse,height,title,imngSrc,des,details,price
 						</Col>
 						<Col xl={12} lg={12} md={24} xs={24}>
 							<Subtitle ><span />{title}<span /></Subtitle>
-							<ServiceTabs des={des} height={`${height}px`}/>
+							<ServiceTabs des={des} details={details} price={price} height={`${height}px`}/>
 						</Col>
 					</Row>
 				</ServiceIntroSectionWrapper>
