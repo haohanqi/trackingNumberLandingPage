@@ -8,7 +8,7 @@ const CostumerSection = ()=>{
 		<BasicSectionWrapper>
 			<Row>
 				<Col>
-					<CustomerSectionTitle>What Does Our Customers Say ?</CustomerSectionTitle>
+					<CustomerSectionTitle>Testimonials</CustomerSectionTitle>
 				</Col>
 			</Row>
 			<Row justify="center" style={{width:"100%"}}>

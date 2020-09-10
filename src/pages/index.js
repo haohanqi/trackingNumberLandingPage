@@ -11,6 +11,10 @@ import DocumentDeliveryDes from '../components/main-page/Content/ServiceDes/Docu
 import ServiceProcessPrice from '../components/main-page/Content/Pricing/ServiceProcessPrice'
 import DocumentFillingPrice from '../components/main-page/Content/Pricing/DocumentFillingPrice'
 import DocumentDeliveryPrice from '../components/main-page/Content/Pricing/DocumentDeliveryPrice'
+import serviceIntro1 from '../images/serviceIntro1.svg'
+import serviceIntro2 from '../images/serviceIntro2.svg'
+import serviceIntro3 from '../images/serviceIntro3.svg'
+
 
 const IndexPage = () => {
 	
@@ -54,7 +58,7 @@ const IndexPage = () => {
 			<ServiceIntroSection ID="serviceProcessing"
 								 height={responsiveHeight} 
 								 title="Service Processing" 
-								 src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+								 imgSrc={serviceIntro1}
 								 des={<ServiceProcessDes />}
 								 price={<ServiceProcessPrice/>}
 								 />
@@ -62,7 +66,7 @@ const IndexPage = () => {
 			<ServiceIntroSection ID="documentFiling"
 			                     height={responsiveHeight} 
 								 title="Court Document Filing" 
-								 src="https://images.unsplash.com/photo-1567010181037-8f482ca00531?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+								 imgSrc={serviceIntro2}
 								 reverse={true} 
 								 des={<DocumentFillingDes/>}
 								 price={<DocumentFillingPrice/>}
@@ -71,7 +75,7 @@ const IndexPage = () => {
 			<ServiceIntroSection ID="legalDocument"
 								 height={responsiveHeight} 
 								 title="Legal Document Delivery"
-								 src="https://images.unsplash.com/photo-1577702312572-5bb9328a9f15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+								 imgSrc={serviceIntro3}
 								 des={<DocumentDeliveryDes/>}
 								 price={<DocumentDeliveryPrice/>}
 								 />

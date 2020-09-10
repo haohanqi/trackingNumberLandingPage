@@ -3,8 +3,10 @@ import { Carousel, Row, Col } from 'antd';
 import InputSearch from './InputSearch'
 import { BasicSectionWrapper, basicColor } from '../../../../basicStyle'
 import {  IntroSectionTitle, IntroSectionSubTitle, IntroDes, TrackingButton } from '../../style'
-import introPic from '../../../../images/introOne.png'
-import introPicTwo from '../../../../images/introTwo.png'
+
+import introPartTwo from '../../../../images/introPart2.svg'
+import introPartOne from '../../../../images/introPart1.svg'
+
 import '../../../../global.css'
 
 const IntroSectionPartOne = ({height})=>{
@@ -20,7 +22,7 @@ const IntroSectionPartOne = ({height})=>{
 					</IntroDes>
 				</Col>
 				<Col lg={14} md={0} sm={0} xs={0} xl={12} align="left">
-					<img src={introPic} height="80%" width="100%"/>
+				<img src={introPartOne} height="80%" width="100%"/>
 				</Col>
 			</Row>
 	)
@@ -44,7 +46,7 @@ const IntroSectionPartTwo = ({height})=>{
 
 				</Col>
 				<Col lg={14} md={0} sm={0} xs={0} xl={12} align="left">
-				<img src={introPicTwo} height="90%" width="100%" />
+				<img src={introPartTwo} height="90%" width="100%" />
 				</Col>
 			</Row>
 	)

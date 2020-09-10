@@ -13,13 +13,9 @@ const SideNav = ()=>{
 			<Menu.Item key="1" style={styles.navItem}>
 				<Link to="/aboutUs">About Us</Link>
 			</Menu.Item>
-            
-			<Menu.Item key="2" style={styles.navItem}>
-                Pricing
-			</Menu.Item>
 
 			<Menu.Item key="3" style={styles.navItem}>
-				Contact
+				<Link to="/contactUs">Contact</Link>
 			</Menu.Item>
     
 			<Menu.Item key="4" style={styles.navItem}>

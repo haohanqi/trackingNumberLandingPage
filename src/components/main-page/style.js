@@ -42,12 +42,18 @@ border-radius:100%;
 export const IntroSectionTitle = styled.div`
 ${sectionLargeTitle}
 margin-bottom:20px;
+@media only screen and (max-width:480px){
+	font-size:30px;
+}
 `
 
 export const IntroSectionSubTitle = styled.div`
 ${sectionTitle}
 margin-bottom:30px;
 text-align:center;
+@media only screen and (max-width:480px){
+	font-size:20px;
+}
 `
 
 export const TrackingButton = styled.div`
@@ -66,6 +72,10 @@ color:${basicColor.primaryColor};
 	color:${basicColor.buttonTextColorTwo};
 	background-color:${basicColor.primaryColor};
 }
+@media only screen and (max-width:480px){
+	font-size:20px;
+	width:100%;
+}
 `
 
 //
@@ -75,12 +85,18 @@ color:${basicColor.desTextColorTwo};
 line-height:3;
 margin-bottom:20px;
 font-size:20px;
+@media only screen and (max-width:480px){
+	font-size:18px;
+}
 `
 
 export const InputSearchWrapper = styled.div`
 width:80%;
 height:40px;
 margin-bottom:20px;
+@media only screen and (max-width:480px){
+	width:100%;
+}
 `
 export const Input = styled.input`
 width:60%;
@@ -104,12 +120,20 @@ flex-direction:column;
 justify-content:space-around;
 align-items:center;
 margin-bottom:30px;
+@media only screen and (max-width:480px){
+	height:250px;
+}
 `
 
 export const ServiceSectionTitle = styled.div`
-font:${sectionTitle};
-font-size:35px;
+${sectionLargeTitle};
 margin-bottom:20px;
+text-align:center;
+width:100%;
+margin-bottom:60px;
+@media only screen and (max-width:480px){
+	font-size:30px;
+}
 `
 
 export const Subtitle = styled.div`
@@ -145,8 +169,8 @@ margin-top:2.5%;
 `
 
 export const ServiceCoverImage = styled.img`
-width:50%;
-height:50%;
+width:35%;
+height:35%;
 `
 export const ServiceName = styled.div`
 font:${title};
@@ -163,12 +187,18 @@ border-radius:20px;
 line-height:50px;
 box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.75);
 margin-bottom:40px;
+@media only screen and (max-width:480px){
+	font-size:20px;
+	line-height:35px;
+	height:35px;
+}
+
 `
 
 export const ServiceIntroSectionWrapper = styled(BasicSectionWrapper)`
 padding-left:0;
-padding-top:0;
-padding-bottom:0;
+padding-top:20px;
+padding-bottom:20px;
 @media only screen and (max-width:992px){
 	padding-top:15%;
 	padding-bottom:5%;
@@ -182,9 +212,12 @@ font-size:15px;
 
 //
 export const CustomerSectionTitle = styled.div`
-${sectionTitle};
+${sectionLargeTitle};
 margin-bottom:40px;
 text-align:left;
+@media only screen and (max-width:480px){
+	font-size:30px;
+}
 `
 
 export const CustomerItemWrapper = styled.div`
@@ -201,6 +234,9 @@ export const CustomerImage = styled.div`
 display:inline-block;
 width:100%;
 height:100%;
+img{
+	object-fit:cover;
+}
 @media only screen and (max-width:480px){
 	height:225px;
 }

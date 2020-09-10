@@ -14,12 +14,6 @@ const PageLayout = ({ children}) => {
 	const [showPage, setShowPage] = useState(true)
 	
 	// get current window width 
-	// useEffect(()=>{
-	// 	if(typeof window !== 'undefined'){
-	// 		setWindowWidth(window.innerWidth)
-	// 	}
-	// },[width])
-
 	useEffect(() => {
 		function handleResize() {
 			setWindowWidth(window.innerWidth)
