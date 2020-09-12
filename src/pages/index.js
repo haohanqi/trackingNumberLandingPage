@@ -37,7 +37,7 @@ const IndexPage = () => {
 	// set a responsive high, if screen height larger than 1400px, set section component height to full screen height. 
 	// else let section takes the space it needs
 	useEffect(() => {
-		if ( width <= 1200 || height<=700) {
+		if ( width <= 1200 || height<=850) {
 			
 			setResponsiveHeight('none')	
 			

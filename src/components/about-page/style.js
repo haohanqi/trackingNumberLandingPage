@@ -71,9 +71,7 @@ font-size:20px;
 `
 export const StepDes = styled.div`
 ${title};
-color:${basicColor.primaryColor};
-
-
+color:${props=>props.color};
 `
 export const IconWrapper = styled.div`
 font-size:40px;

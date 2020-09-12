@@ -1,7 +1,8 @@
 import React from 'react'
 import { Row, Col } from 'antd'
+import {ArrowRightOutlined} from "@ant-design/icons"
 import {BasicSectionWrapper, basicColor} from '../../../../basicStyle'
-import { ServiceSectionTitle, Subtitle } from '../../style'
+import { ServiceSectionTitle, OrderButton } from '../../style'
 import ServiceBlock from './ServiceBlock'
 import serviceImg1 from '../../../../images/serviceImg1.svg'
 import serviceImg2 from '../../../../images/serviceImg2.svg'
@@ -22,6 +23,15 @@ const ServiceSection = ({height})=>{
 				<Col xl={7} lg={9} md={13} sm={13} xs={20} align="center"><ServiceBlock src={serviceImg1} name="Service Processing"/></Col>
 				<Col xl={7} lg={9} md={13} sm={13} xs={20} align="center"><ServiceBlock src={serviceImg2} name="Court Document Filing "/></Col>
 				<Col xl={7} lg={9} md={13} sm={13} xs={20} align="center"><ServiceBlock src={serviceImg3} name="Legal Document Delivery "/></Col>
+			</Row>
+			<Row justify="center">
+				<Col>
+					<OrderButton>
+						Order Now
+						<div className="icon"><ArrowRightOutlined/></div>
+					</OrderButton>
+				</Col>
+			
 			</Row>
 		</BasicSectionWrapper>
 	)

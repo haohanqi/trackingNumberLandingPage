@@ -1,11 +1,12 @@
 import React from 'react'
 import { Row,Col } from 'antd'
 import {Link} from 'gatsby'
-import { NumberOutlined, SyncOutlined, SendOutlined, CloudDownloadOutlined,CheckCircleOutlined } from '@ant-design/icons'
+import { NumberOutlined, SyncOutlined, SendOutlined, CloudDownloadOutlined,CheckCircleOutlined,ArrowRightOutlined } from '@ant-design/icons'
 import { AboutSectionWrapper, AboutInfoWrapper, AboutInfo, 
 		 AboutServiceBlock, StepSectionWrapper, AboutSectionTitle, 
-	CompanyDes, StepItemWrapper, IconWrapper, StepDes, StartButton, 
+	CompanyDes, StepItemWrapper, IconWrapper, StepDes, 
 	GuaranteeSectionWrapper, GuaranteeSectionPart, GuaranteeSectionTitle, GuaranteeItemWrapper }  from '../../style'
+import {OrderButton} from '../../../main-page/style'
 import CountingPart from './CountingPart'
 const AboutSection = ()=>{
 return (
@@ -23,7 +24,10 @@ return (
 
 			<Row>
 				<Col xl={8} lg={8} md={24} sm={24} xs={24}>
-					<AboutServiceBlock backgroundColor="rgb(0,255,68,0.3)">
+					<AboutServiceBlock backgroundColor="rgb(0,255,68,0.3)"
+									   data-sal="flip-right"
+									   data-sal-delay="600"
+									   data-sal-easing="ease">
 						<div className="serviceName" >Service Processing</div>
 						<div className="seeMore">
 							<Link href="/" title="Service Processing">See more</Link>
@@ -32,7 +36,10 @@ return (
 				</Col>
 				
 				<Col xl={8} lg={8} md={24} sm={24} xs={24}>
-					<AboutServiceBlock backgroundColor="rgb(253,187,162,0.3)">
+					<AboutServiceBlock backgroundColor="rgb(253,187,162,0.3)"
+									   data-sal="flip-right"
+									   data-sal-delay="700"
+									   data-sal-easing="ease">
 						<div className="serviceName" >Court Document Filing </div>
 						<div className="seeMore" >
 							<Link to="/">See more</Link>
@@ -42,7 +49,10 @@ return (
 				</Col>
 				
 				<Col xl={8} lg={8} md={24} sm={24} xs={24}>
-					<AboutServiceBlock backgroundColor="rgb(247,255,3,0.3)">
+					<AboutServiceBlock backgroundColor="rgb(247,255,3,0.3)"
+						               data-sal="flip-right"
+									   data-sal-delay="800"
+									   data-sal-easing="ease">
 						<div className="serviceName" >Legal Document Delivery </div>
 						<div className="seeMore">
 							<Link to="/">See more</Link>
@@ -53,28 +63,32 @@ return (
 				
 		</AboutInfoWrapper>
 
-		<StepSectionWrapper> 
+		<StepSectionWrapper data-sal="slide-left"
+			                data-sal-easing="ease"> 
 			<StepItemWrapper>
 				<IconWrapper><NumberOutlined /></IconWrapper>
-				<StepDes>1. Get Your Tracking Number</StepDes>
+				<StepDes color="white">1. Get Your Tracking Number</StepDes>
 			</StepItemWrapper>
 
 			<StepItemWrapper>
 				<IconWrapper><SyncOutlined /></IconWrapper>
-				<StepDes>2. Keep Updating</StepDes>
+				<StepDes color="white">2. Keep Updating</StepDes>
 			</StepItemWrapper>
 
 			<StepItemWrapper>
 				<IconWrapper><SendOutlined /></IconWrapper>
-				<StepDes>3. Destination </StepDes>
+				<StepDes color="white">3. Destination </StepDes>
 			</StepItemWrapper>
 
 			<StepItemWrapper>
 				<IconWrapper><CloudDownloadOutlined /></IconWrapper>
-				<StepDes>4. Download Your PDF</StepDes>
+				<StepDes color="white">4. Download Your PDF</StepDes>
 			</StepItemWrapper>
 
-			<StartButton>Start Now</StartButton>
+			<OrderButton color="black" backgroundColor="white" style={{marginTop:"100px"}}>
+				Start Now
+				<div className="icon"><ArrowRightOutlined/></div>
+			</OrderButton>
 		
 		</StepSectionWrapper>
 
@@ -82,7 +96,10 @@ return (
 		<GuaranteeSectionWrapper>
 			<Row style={{ height: "100%" }}>
 				<Col xl={12} lg={12} md={12} sm={24} xs={24}>
-					<GuaranteeSectionPart backgroundColor="#EFEFEF">
+					<GuaranteeSectionPart backgroundColor="#EFEFEF" 
+										  data-sal="flip-right"
+									      data-sal-delay="500"
+									      data-sal-easing="ease">
 						<GuaranteeSectionTitle>
 							We Guarantee
 						</GuaranteeSectionTitle>
@@ -106,7 +123,11 @@ return (
 				</Col>
 
 				<Col xl={12} lg={12} md={12} sm={24} xs={24}>
-					<GuaranteeSectionPart backgroundColor="#71CFD6" color="white">
+					<GuaranteeSectionPart backgroundColor="#71CFD6" 
+										  color="white"
+										  data-sal="flip-right"
+										  data-sal-delay="500"
+										  data-sal-easing="ease">
 						<GuaranteeSectionTitle>
 							Service Range
 						</GuaranteeSectionTitle>

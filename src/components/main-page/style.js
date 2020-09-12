@@ -35,6 +35,13 @@ export const StuffMemberWrapper = styled.div`
 width: 60px;
 height:60px;
 border-radius:100%;
+&:hover{
+img{
+	width:55px;
+	height:55px;
+}	
+	
+}
 `
 
 //
@@ -84,7 +91,7 @@ ${des}
 color:${basicColor.desTextColorTwo};
 line-height:3;
 margin-bottom:20px;
-font-size:20px;
+font-size:18px;
 @media only screen and (max-width:480px){
 	font-size:18px;
 }
@@ -114,12 +121,15 @@ export const ServiceBlockWrapper = styled.div`
 width:100%;
 height: 300px;
 border-radius:10px;
-box-shadow: 0px 5px 30px 5px rgba(0,0,0,0.75);
 display:flex;
 flex-direction:column;
 justify-content:space-around;
 align-items:center;
 margin-bottom:30px;
+&:hover{
+	background-color:${basicColor.secondaryColor};
+
+}
 @media only screen and (max-width:480px){
 	height:250px;
 }
@@ -192,6 +202,31 @@ margin-bottom:40px;
 	line-height:35px;
 	height:35px;
 }
+`
+
+export const OrderButton = styled.div`
+width:200px;
+height:45px;
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+align-items:center;
+background-color:${props=>props.backgroundColor};
+border-radius:20px;
+border:2px solid black;
+font-size:15px;
+color:${props=>props.color};
+.icon{
+	height:30px;
+	width:30px;
+	font-size:20px;
+	text-align:center;
+	line-height:30px;
+	border-radius:100%;
+	background-color:black;
+	color:white;
+}
+
 
 `
 

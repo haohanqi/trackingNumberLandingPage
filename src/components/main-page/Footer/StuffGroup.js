@@ -1,13 +1,7 @@
 import React from 'react'
 import { StuffGropWrapper, StuffMemberWrapper } from '../style'
+import StuffMember from './StuffMember'
 
-const StuffMember = ({src})=>{
-	return (
-		<StuffMemberWrapper>
-			<img src={src} style={{objectFit:'cover', height:'50px', weight:'50px', borderRadius:'100%'}} />
-		</StuffMemberWrapper>
-	)
-}
 
 const StuffGroup = ()=>{
 	return (

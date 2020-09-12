@@ -54,9 +54,14 @@ export const BasicSectionWrapper = styled.div`
 width: 100%;
 height: ${props=>props.height};
 padding-top:2.5%;
-padding-left:2.5%;
-padding-bottom: 2.5%;
+padding-left:8%;
+padding-right:8%;
+padding-bottom: 5%;
 background-color: ${props => props.backgroundColor};
+@media only screen and (max-width:480px){
+	padding-left:2.5%;
+	padding-right:2.5%;
+}
 `
 
 
