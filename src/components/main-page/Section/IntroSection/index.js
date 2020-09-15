@@ -17,7 +17,11 @@ const IntroSectionPartOne = ({height})=>{
 					<IntroDes>
 						<span style={styles.textHeightLight}>Transparent</span> update of the action through the online tracking system.
 						<span style={styles.textHeightLight}> Accurate</span> timing to ensure the clients’ needs are maximumly satisfied. 
-						<span style={styles.textHeightLight}> Fast</span> service processing in accordance with Ministry of Attorney General.
+						<span style={styles.textHeightLight}> Fast</span> service processing in accordance with <a href="https://www.attorneygeneral.jus.gov.on.ca/english/courts/guides/Guide_to_Serving_Documents_EN.html "> Ministry of Attorney General</a>.
+					</IntroDes>
+					<IntroDes>
+						We are T.A.F, your entrusted partners in Service Processing, Court Document Filing and Legal Document Delivery
+						Mission accomplished in 24 hours within GTA 
 					</IntroDes>
 					<OrderButton>
 						Start Your Service Now
@@ -64,7 +68,7 @@ const IntroSection = ({height})=>{
 
 	return (
 		<BasicSectionWrapper backgroundColor={basicColor.primaryColor} height={height}>
-			<Carousel style={{ width: "100%", height: height}}>
+			<Carousel style={{ width: "100%", height: height}} autoplay={true}>
 				<div>
 					<IntroSectionPartOne height={height}/>
 				</div>
@@ -79,7 +83,8 @@ const IntroSection = ({height})=>{
 const styles = {
 	textHeightLight:{
 		color:"black",
-		fontWeight:"900"
+		fontWeight:"900",
+		fontSize:"25px"
 	},
 
 	textHeightLightTwo:{

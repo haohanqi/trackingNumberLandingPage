@@ -88,7 +88,7 @@ color:${basicColor.primaryColor};
 //
 export const IntroDes = styled.p`
 ${des}
-color:${basicColor.desTextColorTwo};
+color:${basicColor.sideColor};
 line-height:3;
 margin-bottom:20px;
 font-size:18px;

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Row,Col} from 'antd'
+import {Link} from 'gatsby'
 import {basicColor} from '../../../../basicStyle'
 import { ServiceIntroSectionWrapper,Subtitle,OrderButton} from '../../style'
 import ServiceTabs from './ServiceTabs'
@@ -7,7 +8,7 @@ import {ArrowRightOutlined} from '@ant-design/icons'
 
 
 
-const ServiceIntroSection = ({reverse,height,title,imgSrc,des,details,price})=>{
+const ServiceIntroSection = ({reverse,height,title,imgSrc,des,details,price,service})=>{
 	const render = ()=>{
 		if(reverse){
 			return (
@@ -26,14 +27,17 @@ const ServiceIntroSection = ({reverse,height,title,imgSrc,des,details,price})=>{
 
 							<ServiceTabs des={des} 
 										 details={details} 
+										 service={service}
 										 price={price} 
 										 height={`${height}px`} />
 							
 							<div style={{ float: "left", marginLeft: "5%", marginBottom: "20px", fontSize: "15px", marginTop: "20px" }}>
+								<Link to="/order">
 								<OrderButton backgroundColor="white">
 									Order Now
 									<div className="icon"><ArrowRightOutlined /></div>
 								</OrderButton>
+								</Link>
 							</div>
 						</Col>
 						<Col xl={12} lg={12} md={0} xs={0}>
@@ -56,13 +60,19 @@ const ServiceIntroSection = ({reverse,height,title,imgSrc,des,details,price})=>{
 									  <span />{title}<span />
 							</Subtitle>
 							
-							<ServiceTabs des={des} details={details} price={price} height={`${height}px`}/>
+							<ServiceTabs des={des} 
+										 details={details} 
+										 service={service}
+										 price={price} 
+										 height={`${height}px`}/>
 							
 							<div style={{ float: "right", marginRight: "5%", marginBottom: "20px",fontSize:"15px",marginTop:"20px"}}>
+								<Link to="/order">
 								<OrderButton backgroundColor="white">
 									Order Now
 									<div className="icon"><ArrowRightOutlined /></div>
 								</OrderButton>
+								</Link>
 							</div>
 						</Col>
 					</Row>

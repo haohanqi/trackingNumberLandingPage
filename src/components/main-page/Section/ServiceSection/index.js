@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'antd'
 import {ArrowRightOutlined} from "@ant-design/icons"
+import {Link} from 'gatsby'
 import {BasicSectionWrapper, basicColor} from '../../../../basicStyle'
 import { ServiceSectionTitle, OrderButton } from '../../style'
 import ServiceBlock from './ServiceBlock'
@@ -26,10 +27,12 @@ const ServiceSection = ({height})=>{
 			</Row>
 			<Row justify="center">
 				<Col>
+					<Link to="/order">
 					<OrderButton>
 						Order Now
 						<div className="icon"><ArrowRightOutlined/></div>
 					</OrderButton>
+					</Link>
 				</Col>
 			
 			</Row>

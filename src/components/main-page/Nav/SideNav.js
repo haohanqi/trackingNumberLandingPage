@@ -17,8 +17,12 @@ const SideNav = ()=>{
 			<Menu.Item key="3" style={styles.navItem}>
 				<Link to="/contactUs">Contact</Link>
 			</Menu.Item>
-    
+
 			<Menu.Item key="4" style={styles.navItem}>
+				<Link to="/order">Order Now</Link>
+			</Menu.Item>
+    
+			<Menu.Item key="5" style={styles.navItem}>
                 Track Now
 			</Menu.Item>
 		</Menu>

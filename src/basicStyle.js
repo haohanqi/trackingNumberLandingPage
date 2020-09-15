@@ -25,6 +25,9 @@ export const sectionLargeTitle = `
 ${titleFont}
 font-size:50px;
 font-weight:900;
+@media only screen and (max-width: 480px) {
+	font-size:35px;
+};
 `
 export const sectionTitle = `
 ${titleFont}

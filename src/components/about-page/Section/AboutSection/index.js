@@ -63,8 +63,7 @@ return (
 				
 		</AboutInfoWrapper>
 
-		<StepSectionWrapper data-sal="slide-left"
-			                data-sal-easing="ease"> 
+		<StepSectionWrapper> 
 			<StepItemWrapper>
 				<IconWrapper><NumberOutlined /></IconWrapper>
 				<StepDes color="white">1. Get Your Tracking Number</StepDes>
