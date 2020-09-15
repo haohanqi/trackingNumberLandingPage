@@ -69,7 +69,7 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="50%" name="firstName" type="text"  required/>
+							<Input style={styles.inputStyle} name="firstName" type="text"  required/>
 						</Form.Item>
 
 						<Form.Item
@@ -82,14 +82,14 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="50%" type="text" name="lastName" required/>
+							<Input style={styles.inputStyle} type="text" name="lastName" required/>
 						</Form.Item>
 
 						<Form.Item
 							name="company"
 							label="Company"
 						>
-							<InputWrapper width="50%" type="text" name="company" />
+							<Input style={styles.inputStyle}  type="text" name="company" />
 						</Form.Item>
 
 						<Form.Item
@@ -102,7 +102,7 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="70%" type="text" name="address" required />
+							<Input style={styles.inputStyle} type="text" name="address" required />
 						</Form.Item>
 
 						<Form.Item
@@ -115,7 +115,7 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="50%" type="text" name="city" required />
+							<Input style={styles.inputStyle} type="text" name="city" required />
 						</Form.Item>
 
 
@@ -129,7 +129,7 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="50%" type="text" name="province" required />
+							<Input style={styles.inputStyle} type="text" name="province" required />
 						</Form.Item>
 
 						<Form.Item
@@ -142,7 +142,20 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="50%" type="tel"  name="phone" required />
+							<Input style={styles.inputStyle} type="tel"  name="phone" required />
+						</Form.Item>
+
+						<Form.Item
+							name="email"
+							label="Email"
+							rules={[
+								{
+									required: true,
+									message: 'Please input your receiver email',
+								},
+							]}
+						>
+							<Input style={styles.inputStyle} name="email" required />
 						</Form.Item>
 
 						<Divider/>
@@ -160,7 +173,7 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="50%" type="text"  required />
+							<Input style={styles.inputStyle} type="text" name="refirstname"  required />
 						</Form.Item>
 
 						<Form.Item
@@ -173,7 +186,7 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="50%" type="text" name="relastName" required />
+							<Input style={styles.inputStyle} type="text" name="relastName" required />
 						</Form.Item>
 
 					
@@ -187,7 +200,7 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="70%" type="text" name="readdress" required />
+							<Input style={styles.inputStyle} type="text" name="readdress" required />
 						</Form.Item>
 
 						<Form.Item
@@ -200,7 +213,7 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="50%" type="text" name="recity" required />
+							<Input style={styles.inputStyle} type="text" name="recity" required />
 						</Form.Item>
 
 
@@ -214,7 +227,7 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="50%" type="text" name="reprovince" required />
+							<Input style={styles.inputStyle} type="text" name="reprovince" required />
 						</Form.Item>
 
 						<Form.Item
@@ -227,8 +240,9 @@ const Order =()=>{
 								},
 							]}
 						>
-							<InputWrapper width="50%" type="tel"  name="rephone" required />
+							<Input style={styles.inputStyle} type="tel"  name="rephone" required />
 						</Form.Item>
+
 
 						<Divider/>
 

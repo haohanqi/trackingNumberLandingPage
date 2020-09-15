@@ -22,3 +22,7 @@ div[role="group"][tabindex] {
 	opacity: 1;
 	background: #ff4ef6;
 }
+
+.ant-form .ant-form-item .ant-form-item-label .ant-form-item-required{
+	display: block;
+}

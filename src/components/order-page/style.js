@@ -26,6 +26,7 @@ font-size:18px;
 `
 export const InputWrapper = styled.input`
 width:${props=>props.width};
+display:block;
 @media only screen and (max-width:480px){
 	width:80%;
 }
