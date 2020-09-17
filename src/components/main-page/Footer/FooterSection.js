@@ -14,10 +14,9 @@ const FooterSection = ()=>{
 					<FooterPartWrapper>
 						<FooterTitle>About Us</FooterTitle>
 						<FooterDes>
-							We all the start up company working
-							With Law Firm to help them track their
-							Legal documents. Company start at 2020,
-							And currently we have over 300 clients, 40 Deliverer in GTA. 
+							TAF is founded and managed by professionals with Ontario legal training. 
+							We realize the importance of the security, 
+							speed and accuracy of each task delivery.
 						</FooterDes>
 					</FooterPartWrapper>
 				</Col>

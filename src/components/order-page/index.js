@@ -29,10 +29,10 @@ const Order =()=>{
 							  If you have any questions please contact us. We are 24 hours availble.
 					</OrderDes>
 					<OrderDes>
-						Email: haohanqiharry@gmail.com
+						Email: alex.h.hao@gmail.com
 					</OrderDes>
 					<OrderDes>
-						Phone: 647-829-5577
+						Phone: (416)-509-9586
 					</OrderDes>
 					<Divider />
 				</Col>

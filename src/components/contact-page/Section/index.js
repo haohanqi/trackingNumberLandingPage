@@ -34,24 +34,24 @@ const ContactSection =()=>{
 
 					</Col>
 				</Row>
-
-				<Divider/>
 				
-				<Row>
-					<Col xl={12} lg={15} md={18} sm={24} xs={24}>
-						<ContactInfoItem>
-							<ContactSectionTitle>Follow Us</ContactSectionTitle>
-							<StuffGropWrapper style={{ width: "60%", justifyContent: "space-between" }}>
-								<StuffMember src={facebook} />
-								<StuffMember src={tw} />
-								<StuffMember src={ins} />
-								<StuffMember src={whatsapp} />
-							</StuffGropWrapper>
-							<ContactDes color="black">We keep updating company news on social media, follow us get latest news</ContactDes>
-						</ContactInfoItem>
+				{
+				// <Row>
+				// 	<Col xl={12} lg={15} md={18} sm={24} xs={24}>
+				// 		<ContactInfoItem>
+				// 			<ContactSectionTitle>Follow Us</ContactSectionTitle>
+				// 			<StuffGropWrapper style={{ width: "60%", justifyContent: "space-between" }}>
+				// 				<StuffMember src={facebook} />
+				// 				<StuffMember src={tw} />
+				// 				<StuffMember src={ins} />
+				// 				<StuffMember src={whatsapp} />
+				// 			</StuffGropWrapper>
+				// 			<ContactDes color="black">We keep updating company news on social media, follow us get latest news</ContactDes>
+				// 		</ContactInfoItem>
 
-					</Col>		
-				</Row>
+				// 	</Col>		
+				// </Row>
+			}
 			</ContactInfoWrapper>
 		
 			<StepSectionWrapper>
