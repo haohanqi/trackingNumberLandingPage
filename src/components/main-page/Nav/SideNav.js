@@ -28,7 +28,7 @@ const SideNav = ()=>{
 			</Menu.Item>
     
 			<Menu.Item key="5" style={styles.navItem}>
-                Coming Soon
+                Tracking(Coming Soon)
 			</Menu.Item>
 		</Menu>
 	)
@@ -36,7 +36,7 @@ const SideNav = ()=>{
 
 const styles={
 	navItem:{
-		fontSize:"20px",
+		fontSize:"15px",
 		marginTop:"20px",
 		fontWeight:"800",
 	}

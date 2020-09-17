@@ -17,7 +17,10 @@ flex-direction:column;
 justify-content:space-around;
 align-items:start;
 margin-left:5%;
-margin-bottom:100px;
+margin-bottom:70px;
+@media only screen and (max-width:480px){
+	margin-bottom:20px;
+}
 `
 
 export const ContactSectionTitle = styled.div`

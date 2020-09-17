@@ -14,12 +14,11 @@ return (
 
 		<AboutInfoWrapper>
 			<AboutInfo>
-				<AboutSectionTitle>About Our Company</AboutSectionTitle>
+				<AboutSectionTitle>About T A F</AboutSectionTitle>
 				<CompanyDes>TAF is founded and managed by professionals with Ontario legal training. 
 				We realize the importance of the security, speed and accuracy of each task delivery.<br/> Based on the legal training and industrial experience, 
 				TAF can be the entrusted partners for the service along each single proceeding and task.  
 				</CompanyDes>
-				<CountingPart/>
 			</AboutInfo>
 
 			<Row>
@@ -84,10 +83,13 @@ return (
 				<StepDes color="white">4. Download Your PDF</StepDes>
 			</StepItemWrapper>
 
-			<OrderButton color="black" backgroundColor="white" style={{marginTop:"100px"}}>
-				Start Now
-				<div className="icon"><ArrowRightOutlined/></div>
-			</OrderButton>
+
+			<Link to="/order" style={{color:"black"}}>
+				<OrderButton color="black" backgroundColor="white" style={{marginTop:"100px"}}>
+					Start Now
+					<div className="icon"><ArrowRightOutlined/></div>
+				</OrderButton>
+			</Link>
 		
 		</StepSectionWrapper>
 

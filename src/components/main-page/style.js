@@ -243,6 +243,10 @@ padding-bottom:20px;
 export const SerciceTabTitle = styled.span`
 font:${title}
 font-size:15px;
+@media only screen and (max-width:480px){
+	font-size:11px;
+};
+
 `
 
 //
@@ -250,13 +254,14 @@ export const CustomerSectionTitle = styled.div`
 ${sectionLargeTitle};
 margin-bottom:40px;
 text-align:left;
+font-size:30px;
 @media only screen and (max-width:480px){
 	font-size:30px;
 }
 `
 
 export const CustomerItemWrapper = styled.div`
-width:90%;
+width:100%;
 height:300px;
 @media only screen and (max-width:480px){
 	height:480px;

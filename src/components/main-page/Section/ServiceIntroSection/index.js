@@ -32,11 +32,11 @@ const ServiceIntroSection = ({reverse,height,title,imgSrc,des,details,price,serv
 										 height={`${height}px`} />
 							
 							<div style={{ float: "left", marginLeft: "5%", marginBottom: "20px", fontSize: "15px", marginTop: "20px" }}>
-								<Link to="/order">
-								<OrderButton backgroundColor="white">
-									Order Now
-									<div className="icon"><ArrowRightOutlined /></div>
-								</OrderButton>
+								<Link to="/order" style={{ color: "black" }}>
+									<OrderButton backgroundColor="white">
+										Order Now
+										<div className="icon"><ArrowRightOutlined /></div>
+									</OrderButton>
 								</Link>
 							</div>
 						</Col>
@@ -53,7 +53,7 @@ const ServiceIntroSection = ({reverse,height,title,imgSrc,des,details,price,serv
 						<Col xl={12} lg={12} md={24} xs={24}>
 							<img src={imgSrc} height="100%" width="100%"/>
 						</Col>
-						<Col xl={12} lg={12} md={24} xs={24}>
+						<Col xl={12} lg={12} md={24} sm={24} xs={24} >
 							<Subtitle data-sal="slide-right"
 									  data-sal-delay="500"
 									  data-sal-easing="ease">
@@ -67,11 +67,11 @@ const ServiceIntroSection = ({reverse,height,title,imgSrc,des,details,price,serv
 										 height={`${height}px`}/>
 							
 							<div style={{ float: "right", marginRight: "5%", marginBottom: "20px",fontSize:"15px",marginTop:"20px"}}>
-								<Link to="/order">
-								<OrderButton backgroundColor="white">
-									Order Now
-									<div className="icon"><ArrowRightOutlined /></div>
-								</OrderButton>
+								<Link to="/order" style={{ color: "black" }}>
+									<OrderButton backgroundColor="white">
+										Order Now
+										<div className="icon"><ArrowRightOutlined /></div>
+									</OrderButton>
 								</Link>
 							</div>
 						</Col>

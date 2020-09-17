@@ -13,7 +13,7 @@ const CostumerSection = ()=>{
 			</Row>
 			<Row justify="center" style={{width:"100%"}}>
 				<Col align="center" span={24}>
-					<Carousel style={{width:"80%",height:"490px",marginBottom:"20px"}}>
+					<Carousel style={{width:"85%",height:"490px",marginBottom:"20px"}}>
 						<CustomerItem/>
 						<CustomerItem/>
 						<CustomerItem/>

@@ -27,7 +27,7 @@ const ServiceSection = ({height})=>{
 			</Row>
 			<Row justify="center">
 				<Col>
-					<Link to="/order">
+					<Link to="/order" style={{color:"black"}}>
 					<OrderButton>
 						Order Now
 						<div className="icon"><ArrowRightOutlined/></div>

@@ -19,7 +19,6 @@ const FooterSection = ()=>{
 							Legal documents. Company start at 2020,
 							And currently we have over 300 clients, 40 Deliverer in GTA. 
 						</FooterDes>
-						<StuffGroup/>
 					</FooterPartWrapper>
 				</Col>
 
@@ -30,6 +29,12 @@ const FooterSection = ()=>{
 				<Col md={6} xs={24} align='center'>
 					<Contact/>
 				</Col>          
+			</Row>
+
+			<Row align="center">
+				<Col style={{color:"white"}}>
+					@copyright T A F 2020
+				</Col>
 			</Row>
 			
 		</BasicSectionWrapper>

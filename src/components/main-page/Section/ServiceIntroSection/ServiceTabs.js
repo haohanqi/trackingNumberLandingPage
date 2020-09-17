@@ -15,18 +15,26 @@ const ServiceTabs = ({des,price,service})=>{
 			</Tabs.TabPane>
 
 			<Tabs.TabPane tab={<SerciceTabTitle >Process of the Service</SerciceTabTitle>} key="2">
-				<div style={{ width: "100%", background: "white", borderRadius: "10px" }}>
+				<div style={styles.tabWrapper}>
 					{service}
 				</div>
 			</Tabs.TabPane>
 
 			<Tabs.TabPane tab={<SerciceTabTitle >Price</SerciceTabTitle>} key="3">
-				<div style={{ width: "100%", background: "white", borderRadius: "10px" }}>
+				<div style={styles.tabWrapper}>
 					{price}
 				</div>
 			</Tabs.TabPane>	
 		</Tabs>
 	)
+}
+
+const styles = {
+	tabWrapper:{
+		width: "100%", 
+		background: "white", 
+		borderRadius: "10px"
+	}
 }
 
 export default ServiceTabs

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row,Col} from 'antd'
+import {Row,Col,Divider} from 'antd'
 import { NumberOutlined, GoogleOutlined, PhoneOutlined,HomeOutlined} from '@ant-design/icons'
 import { ContactUsWrapper, ContactInfoWrapper, ContactInfoItem, ContactSectionTitle, ContactDes} from '../style'
 import { StepSectionWrapper, StepItemWrapper, StepDes, IconWrapper} from '../../about-page/style'
@@ -22,16 +22,21 @@ const ContactSection =()=>{
 					<Col xl={12} lg={15} md={18} sm={24} xs={24}>
 						<ContactInfoItem>
 							<ContactSectionTitle>Contact Us</ContactSectionTitle>
-							<StuffGropWrapper style={{width:"60%",justifyContent:"space-between"}}>
-								<StuffMember src='https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'/>
-								<StuffMember src='https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80' />
-								<StuffMember src='https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80' />
-								<StuffMember src='https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80' />
-							</StuffGropWrapper>
-							<ContactDes color="black">We are 24 hours available. Any question, please contact us</ContactDes>
+							<ContactDes color="black">Once the on-line form is created, we will get back to you shortly for confirmation</ContactDes>
 						</ContactInfoItem>
 					</Col>				
 				</Row>
+
+				<Row>
+					<Col style={{ marginLeft: "5%" }} xl={0} lg={0} md={0} sm={24} xs={24}>
+						<ContactDes color="black">Email: alex.h.hao@gmail.com</ContactDes>
+						<ContactDes color="black">Phone: 416-509-9586</ContactDes>
+
+					</Col>
+				</Row>
+
+				<Divider/>
+				
 				<Row>
 					<Col xl={12} lg={15} md={18} sm={24} xs={24}>
 						<ContactInfoItem>
@@ -42,7 +47,7 @@ const ContactSection =()=>{
 								<StuffMember src={ins} />
 								<StuffMember src={whatsapp} />
 							</StuffGropWrapper>
-							<ContactDes color="black">We are 24 hours available. Any question, please contact us</ContactDes>
+							<ContactDes color="black">We keep updating company news on social media, follow us get latest news</ContactDes>
 						</ContactInfoItem>
 
 					</Col>		

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'gatsby'
 import { Carousel, Row, Col } from 'antd';
 import {ArrowRightOutlined} from '@ant-design/icons'
 import { BasicSectionWrapper, basicColor } from '../../../../basicStyle'
@@ -23,10 +24,13 @@ const IntroSectionPartOne = ({height})=>{
 						We are T.A.F, your entrusted partners in Service Processing, Court Document Filing and Legal Document Delivery
 						Mission accomplished in 24 hours within GTA 
 					</IntroDes>
-					<OrderButton>
-						Start Your Service Now
-						<div className="icon"><ArrowRightOutlined/></div>
-					</OrderButton>
+
+					<Link to="/order" style={{color:"black"}}>
+						<OrderButton>
+							Start Your Service Now
+							<div className="icon"><ArrowRightOutlined/></div>
+						</OrderButton>
+					</Link>
 				</Col>
 			<Col lg={14} md={0} sm={0} xs={0} xl={12} align="left" data-sal="slide-left" data-sal-easing="ease-in" data-sal-duration="500">
 				<img src={introPartOne} height="80%" width="100%"/>
@@ -49,10 +53,12 @@ const IntroSectionPartTwo = ({height})=>{
 						Kindly referral is <span style={styles.textHeightLightTwo}> 10% off </span>
 					</IntroSectionSubTitle>
 
-					<OrderButton>
-						Track Number
-						<div className="icon"><ArrowRightOutlined/></div>
-					</OrderButton>
+					<Link to="/order" style={{ color: "black" }}>
+						<OrderButton>
+							Order Now
+							<div className="icon"><ArrowRightOutlined /></div>
+						</OrderButton>
+					</Link>
 
 					
 
